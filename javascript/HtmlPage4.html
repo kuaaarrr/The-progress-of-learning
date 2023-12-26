@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>123</title>
+</head>
+<body>
+    <script>
+        //認識內建window物件
+        console.log(window);
+        //認識內建視窗高度與寬度
+        console.log(window.innerHeight);
+        //透過screen物件,取得螢幕尺寸
+        console.log(window.screen.width, window.screen.height);
+        //取得網址列內容
+        console.log(window.location.href);
+        //更改網址列的內容(跳轉網頁)
+        //window.location.href = "https://www.google.com";
+
+        //認識document物件
+        console.log(window.document);
+        console.dir(window.document);
+        //取得網頁標題
+        console.log(document.title);
+        document.title = "核心觀念";
+        //取得body標籤
+        console.log(document.body);
+        //更改網頁主畫面的內容(body標籤的內文)
+        console.log(document.body.innerHTML);
+        document.body.innerHTML = "hello html dom";
+
+    </script>
+</body>
+</html>

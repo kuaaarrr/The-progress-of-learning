@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>解構賦值 destrcturing assignment</title>
+</head>
+<body>
+    <script>
+        //let arr = [3, 4, 5];
+        ////let d1 = arr[1];
+        ////let d2 = arr[2];
+        ////let d3 = arr[3];
+
+        //let[d1, d2, d3,d4=10] = arr;
+        //console.log(d1, d2, d3,d4);
+
+        //變數資料交換
+        //let n1 = 3;
+        //let n2 = 4;
+        //[n2, n1] = [n1, n2];
+        //console.log(n1, n2);
+
+        //物件的解構賦值
+        /*let obj = { x: 3, y: 4 ,z: 8 };*/
+        //let x = obj.x;
+        //let y = obj.y;
+        //let {x,y,z}=obj;
+        //let newx,newy,newz;
+        //({ x:newx, y:newy ,z:newz=10} = obj);
+        //console.log(newx,newy,newz);
+
+        //統整函式的參數
+        //function add(args) {
+        //    console.log(args.n1 + args.n2);
+        //}
+        //add({ n1: 3, n2: 4 });
+        function add({n1,n2 }) {
+            console.log(n1 + n2);
+        }
+        add({ n1: 3, n2: 4 });
+    </script>
+</body>
+</html>

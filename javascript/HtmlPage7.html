@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>AJAX 網路連線實務</title>
+</head>
+<body>
+    <h3>AJAX/XHR 網路連線實務</h3>
+    <button onclick="getdata();">連線取得資料</button>
+    <div id="result"></div>
+    <script>
+        /*
+        測試用的連線網址:
+        https://cwpeng.github.io/live-records-samples/data/products.json
+        */
+        function getdata() {
+            //利用fetch 進行連線並取得資料
+            fetch("https://cwpeng.github.io/live-records-samples/data/products.json").then(function (response) {
+                return response.json();
+            }).then(function (data) {
+
+                let result = document.querySelector("#result");
+                result.innerHTML = "";
+                for (let i = 0; i < data.length; i++) {
+                    let product = data[i];
+                    result.innerHTML += "<div>" + product.name + "," + product.price + "," + product.description+"<div>";
+                }
+                
+            });
+        }
+    </script>
+</body>
+</html>

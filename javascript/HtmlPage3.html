@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <script>
+        ////創建物件
+        //let man = new Object();
+        //man.age = 18;//物件.成員名稱=資料   屬性
+        //man.name = "jordan";
+        ////物件.函數名稱=物件方法
+        //man.talk = function () {
+        //    //物件的方法中使用this 代表物件本身
+            
+        //}
+        //console.log(man);
+        //console.log(man.age > 20);
+        //man.talk();//呼叫物件方法
+
+
+        //使用 JSON建立物件
+        let yes = {
+            age: 15,
+            name: "amy",
+            talk: function () { console.log("hello I'm", this.name, "年齡", this.age); }
+        };
+        console.log(yes);
+
+        //creat array object
+        let grades = [70, 80, 84];
+        grades.push(25);
+        grades.push(100);
+       
+        console.log(grades);
+        console.log(grades[0]);
+        console.log(grades[1]);
+        console.log(grades[4]);
+        //利用for迴圈
+        //算平均數 算總和
+        let total = 0, avg = 0;
+        for (let i = 0; i < grades.length; i++) {
+            total += grades[i];
+            
+        }
+        avg = total / grades.length;
+        console.log(total, avg);
+
+    </script>
+</body>
+</html>

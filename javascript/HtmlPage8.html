@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>箭頭函式(簡化函式) arrow function</title>
+</head>
+<body>
+    <script>
+        //計算1+到10
+        /*function sum(max) {
+            let result = 0;
+            let n = 1;
+            while (n <= max) {
+                result += n;
+                n++;
+            }
+            return result;
+        }*/
+        //箭頭函式
+        let sum = (max) => {
+            let result = 0;
+            let n = 1;
+            while (n <= max) {
+                result += n;
+                n++;
+            }
+            return result;
+        }
+        console.log(sum(10));
+
+        //乘法的箭頭函式
+        //let mult = (n1, n2) => {
+        //    return n1 * n2;
+        //}
+        let mult = (n1, n2) => (n1 * n2);
+        console.log(mult(3, 4));
+    </script>
+</body>
+</html>

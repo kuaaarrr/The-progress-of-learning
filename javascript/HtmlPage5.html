@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        .text {
+            text-decoration: underline;
+            font-weight: bold
+        }
+    </style>
+</head>
+<body>
+    <!--<h3>HTML DOM 畫面操作</h3>
+    <div id="content">畫面的變化</div>
+    <button onclick="change();">點我</button>
+    <script>
+        function change() {
+            //取得標籤物件
+            let elem = document.querySelector("#content");
+            //操作標籤物件
+            elem.innerHTML = "新的內容";
+            elem.className = "text";           
+        }-->
+
+    <!--</script>-->
+    <div>
+        <span onclick="changeAbout();">關於我</span>
+
+        <span onclick="changeExp();" >學經歷</span>
+
+    </div>
+    <hr/>
+    <div id="about">大家好，我是阿慶</div>
+    
+    <div id="exps" style="display:none">我正在學javascript</div>
+    <script>
+        function changeAbout() {
+            let aboutDiv = document.querySelector("#about");
+            let expDiv = document.querySelector("#exps");
+            aboutDiv.style.display = "block";
+            expDiv.style.display = "none";
+            about.className = "text";
+        }
+        function changeExp() {
+            let aboutDiv = document.querySelector("#about");
+            let expDiv = document.querySelector("#exps");
+            aboutDiv.style.display = "none";
+            expDiv.style.display = "block";
+
+            
+        }
+    </script>
+</body>
+</html>
