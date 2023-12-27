@@ -1,0 +1,71 @@
+﻿body {
+    background-color: lightgray;
+}
+
+#I {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#L {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#G {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div {
+    font-family: "Roboto Mono";
+    border-radius: 10px;
+    background-color: white;
+    width: 350px;
+    font-size: 30px;
+    border-style: solid;
+    padding: 5px;
+    margin: 10px;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    text-align: center;
+}
+#ig {
+    margin: 5px 0px 0px 15px;
+}
+
+#line {
+    padding: 8px 0px 0px 90px;
+}
+#Choice {
+    display: flex;
+    justify-content: center;
+    color: black
+}
+
+#color {
+    color: black;
+}
+#img {
+    margin: auto;
+    display: block;
+    width: auto;
+    height: auto;
+}
+footer {
+    display: flex;
+    justify-content: center;
+    background-color: burlywood;
+    height: 114px;
+}
+
+#list {
+    width: 15%;
+    height: 15%;
+}

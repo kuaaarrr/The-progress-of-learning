@@ -1,0 +1,23 @@
+﻿/*id選擇器*/
+#del {
+    text-decoration: line-through
+}
+/*標籤選擇器*/
+body {
+    background-color: lightpink
+}
+/*class選擇器*/
+.title {
+    color: red;
+    margin-bottom: 10px
+}
+
+.content {
+    text-decoration: underline;
+    border: 1px dashed blue;
+    width: 50%
+}
+
+.keyword {
+    color: yellow
+}

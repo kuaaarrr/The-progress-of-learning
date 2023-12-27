@@ -1,0 +1,78 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>染髮</title>
+    <link rel="stylesheet" type="text/css" href="CSS/Videos.css" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital@1&display=swap');
+        
+        
+    </style>
+</head>
+<body>
+    <article id="head">design portfolio(Dye)</article>
+    <video src="videos/model1.mov"
+           muted class="videos" loop style="border: solid; width:auto; height:auto;">
+    </video>
+    <video src="videos/model2.mov"
+           muted class="videos1" loop style="border: solid; width:auto; height:auto;">
+    </video>
+    <video src="videos/model3.mov"
+           muted class="videos2" loop style="border: solid; width:auto; height:auto;">
+    </video>
+    <video src="videos/model4.mov"
+           muted class="videos3" loop style="border: solid; width:auto; height:auto;">
+    </video>
+    <video src="videos/model5.mov"
+           muted class="videos4" loop style="border: solid; width:auto; height:auto;">
+    </video>
+    <video src="videos/model6.mov"
+           muted class="videos5" loop style="border: solid; width:auto; height:auto;">
+    </video>
+    <video src="videos/model7.mov"
+           muted class="videos6" loop style="border: solid; width:auto; height:auto;">
+    </video>
+    <video src="videos/model8.mov"
+           muted class="videos7" loop style="border: solid; width:auto; height:auto;">
+    </video>
+    
+
+
+    <script>
+        let auto = function (aut) {
+            aut.addEventListener("mouseover", function (e) {
+                aut.play();
+            });
+            aut.addEventListener("mouseout", function (e) {
+                aut.pause();
+            })
+        }
+
+
+        let videos = document.querySelector(".videos");
+        let videos1 = document.querySelector(".videos1");
+        let videos2 = document.querySelector(".videos2");
+        let videos3 = document.querySelector(".videos3");
+        let videos4 = document.querySelector(".videos4");
+        let videos5 = document.querySelector(".videos5");
+        let videos6 = document.querySelector(".videos6");
+        let videos7 = document.querySelector(".videos7");
+
+        auto(videos);
+        auto(videos1);
+        auto(videos2);
+        auto(videos3);
+        auto(videos4);
+        auto(videos5);
+        auto(videos6);
+        auto(videos7);
+
+
+
+
+
+
+    </script>
+</body>
+</html>

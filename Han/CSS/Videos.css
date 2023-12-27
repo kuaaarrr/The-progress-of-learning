@@ -1,0 +1,13 @@
+﻿video {
+    margin: 30px 0px 0px 60px;
+    padding-left: 60px
+}
+#head{
+    text-align:center;
+    font-family:Roboto Mono;
+    font-size:28px;
+       
+}
+body{
+    background-color:lightgray
+}
