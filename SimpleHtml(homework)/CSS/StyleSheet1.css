@@ -1,0 +1,57 @@
+﻿body {
+    margin: 0px;
+    font-family:"Noto Sans TC"
+}
+h1{
+    text-align:center;
+    color:aquamarine;
+}
+nav ul li{
+    display:inline;
+    list-style:none;
+    color:hotpink
+}
+nav ul{
+    text-align:center;
+    padding:5px;
+}
+.mainvisual{
+    display:flex;
+    justify-content:center;
+    max-width: 100%;
+    height: auto;
+}
+img{
+    width:100%;
+}
+
+.news{
+    text-align:center;
+    font-size:20px;
+    color:hotpink;
+    font-weight:700;
+}
+table{
+    
+    border-collapse:collapse;
+    width:50%;
+
+}
+tr,td{
+    border-bottom:solid 1px #cccccc;
+    padding:10px;
+    text-align:left;
+    vertical-align:top;
+}
+.pagetop{
+    text-align:right;
+    border-bottom:solid 3px hotpink;
+}
+.copyright {
+       text-align:center;
+}
+
+a {
+    text-decoration: none;
+    color:aqua;
+}
