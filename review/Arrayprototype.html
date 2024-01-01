@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        Array.prototype.dog = "bow";
+        
+        //console.log([1,2,3].dog);//bow
+                                 //[1,2,3]
+        
+        //reduce用法
+        let num  = [1,2,3,4,5,6,7]
+        let count = 0;
+        num.forEach(function(n){
+            count += n ;
+        });
+        console.log(count);
+        let sum = num.reduce(function(previous,current){
+            previous += current;
+            return previous;
+        },0)
+        console.log(sum);                    
+    </script>
+</body>
+</html>

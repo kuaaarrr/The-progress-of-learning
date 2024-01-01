@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>變數提升Hoisting</h1>
+    <script>
+       /* console.log(y);//undefined
+        var y = 10;
+        console.log(y);//10
+
+
+        console.log(x);//無法存取
+        let x = 10;
+        console.log(x);//10 */
+
+        console.log(x);//undefined
+        var x = 10;
+        console.log(x);//10
+        function sayHello(){
+            console.log(x);//undefined
+            var x= 20;
+            console.log(x);//20
+        }
+        sayHello();
+    </script>
+</body>
+</html>

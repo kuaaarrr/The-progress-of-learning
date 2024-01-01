@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //陣列 Array
+        /*let arr =[111,222,333];
+        console.log(arr);
+        let arr2 = ["dog","cat","sonthing else"];
+        console.log(arr2);
+        arr2.push="abc";*/
+        
+        //陣列的基本操作
+        /*let arr = [1,2,3,4,5,6]
+        arr[0] = 1000;
+        console.log(arr[0],arr[arr.length - 1]);//1000,6 */
+
+        //index of
+        let arr = ["apple","orange","banana"];
+        //console.log(arr.indexOf("apple"));//0
+
+        //slice 切片
+        let test = [1,2,3,4,5,6,7,8,9,10];
+        //console.log(test.slice(2,4));
+
+        let c = ["a","b","c","d","e"];
+        //console.log(c.slice(2,4));
+        //陣列進階方法 map()
+        let dogs = ["Boy 1","Boy 2","Girl 1","Girl 2"]
+        /*let result = dogs.map(function(dog){
+           return dog + "is good";
+        });*/
+       
+        /* let res = dogs.map(dog => dog + " " + "is good");
+        console.log(res);
+        for(let i = 0; i < dogs.length; i++){
+            if(i % 2 === 1){
+                let result = dogs[i] + " " + " is great";
+                console.log(result);
+            }
+
+        }*/
+        //foreach方法
+        const array1=["a","b","c"];
+        let foreachresult = array1.forEach(function(ele){
+            return(ele + "is good");
+        })
+        //console.log(foreachresult);//undefined
+        /*let mapResult = array1.map(function(d){
+            return(d + "is good") ;
+        })*/
+        let mapResult = array1.map(d => d + " is good");
+        //console.log(mapResult);
+
+        //filter過濾資料，符合條件時，組成一個陣列
+        let num=[1,2,3,4,5,6,7,8,9,10];
+        /*let new_num=num.filter(function(e){
+            return (e>=3) && (e<=5);
+        });*/
+        let str=[
+            {name:"Tom",age:20},
+            {name:"Mary",age:35},
+            {name:"Ken",age:38},
+            {name:"Sam",age:15}
+        ];
+        
+        let new_str = str.filter(s => (s.age >= 12) && (s.age <= 25));
+       // console.log(new_str);
+
+
+        let new_num=num.filter(e => (e>=3 && e<=8));
+        //console.log(new_num);
+        //陣列find方法，找到第一筆符合的資料
+        const number1=[5,12,12,8,130,44];
+        let found = number1.find(function(e){
+            return e === 12;
+        })
+        let filterfound = number1.filter(function(e){
+            return e === 12;
+        })
+        console.log(found);12
+        console.log(filterfound);[12,12]
+        
+    </script>
+</body>
+</html>

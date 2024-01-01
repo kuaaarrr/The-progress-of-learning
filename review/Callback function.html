@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>函式的種類</h1>
+    <script>
+        //回呼函數 Callback Function-把函數作為參數傳遞
+        /*function heyFunc(myFunction){
+            myFunction("hi")
+        }
+        heyFunc(console.log);*/
+
+        //匿名函式
+        /*function heyFunc(myFunction){
+            myFunction("hi")
+        }
+        hey(function(message){
+            cosole.log("message is",message);
+        });*/
+
+        //IIFE 立即函式
+        let x = function hello(name){
+            let str = "hi " + name + "!";
+            console.log(str);
+
+        }("peter")
+        (function hello(name){
+            let str = "hi " + name + "!";
+            console.log(str);
+
+        })("peter")
+        //x("peter");
+
+    </script>
+
+</body>
+</html>

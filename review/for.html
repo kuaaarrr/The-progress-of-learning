@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>for迴圈</title>
+</head>
+<body>
+    <h1>for迴圈，用for迴圈數綿羊到一百隻</h1>
+    <script>
+        /*for(let x=1 ; x <= 100 ; x++){
+            console.log("綿羊第" + x + "隻");
+            if(x === 100){
+                console.log("睡著了");
+            }
+        }*/
+        for(let x=1 ; x <= 10 ; x++){
+            console.log("綿羊第" + x + "隻");
+            if(x === 4){
+                continue;
+            }
+            if(x === 10){
+                console.log("睡著了");
+            }
+        }
+    </script>
+</body>
+</html>
